@@ -103,7 +103,7 @@ jobs:
         with:
           context: ./frontend/
           push: true
-          tags: username/taski_frontend:latest
+          tags: eosharo/taski_frontend:latest
 
   build_gateway_and_push_to_docker_hub:
     name: Push gateway Docker image to DockerHub
@@ -123,4 +123,4 @@ jobs:
         with:
           context: ./gateway/
           push: true
-          tags: username/taski_gateway:latest
+          tags: eosharo/taski_gateway:latest
