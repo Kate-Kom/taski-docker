@@ -63,7 +63,8 @@ jobs:
           context: ./backend/
           push: true
           tags: eosharo/taski_backend:latest
-    send_message:
+
+  send_message:
     runs-on: ubuntu-latest
     needs: deploy
     steps:
