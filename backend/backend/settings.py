@@ -10,7 +10,9 @@ SECRET_KEY = os.getenv(
 
 DEBUG = os.getenv("DEBUG", default="False").lower() in ("true", "1", "t")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv(
+    "ALLOWED_HOSTS", default="127.0.0.1,localhost,taski-taski.ddns.net"
+).split(",")
 
 
 # Application definition
